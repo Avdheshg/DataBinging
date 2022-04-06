@@ -9,13 +9,18 @@ import {Component} from "@angular/core";
 
 export class PhoneComponent {
     
-    onBlueVisible = true;
-    onGreenVisible = false;
+    onGreenVisible = true;
+    onBlueVisible = false;
 
+    active32 = true;
+    active64 = false;
+
+    greenPrice = "830";
+    bluePrice = "900";
+
+    
 
 }
-
-
 
 
 
