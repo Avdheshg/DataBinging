@@ -1,0 +1,44 @@
+
+<div class="container">
+
+    <div class="green-phone"
+        *ngIf="onGreenVisible"
+    >
+        <div class="image-wrapper">
+            <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-green-select?wid=940&hei=1112&fmt=png-alpha&.v=1645036275538" alt="Green IPhone">
+        </div>
+        <div class="desc-wrapper">
+            <p>Price: $800</p>
+            <p>8.6</p>
+        </div>
+    </div>
+
+    <div class="blue-phone"
+        *ngIf="onBlueVisible"
+    >
+        <div class="image-wrapper">
+            <img src="https://store.storeim`ages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-blue-select-2020?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1604343704000" alt="Blue IPhone">
+        </div>
+        <div class="desc-wrapper">
+            <p>Price: $850</p>
+            <p>9</p>
+        </div> 
+    </div>
+
+    
+    <div class="action-btn">
+        <button class="btn green"
+            (click)="onGreenVisible = true; onBlueVisible = false"
+        >Green</button>
+        <button class="btn blue"
+            (click)="onBlueVisible = true; onGreenVisible = false"
+        >Blue</button>
+    </div>
+
+</div>
+
+
+
+
+
+
