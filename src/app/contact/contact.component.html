@@ -1,0 +1,70 @@
+
+<h5>2 Ways of passing data of "input" into "para"</h5>
+
+<!-- ============    Event Binding       ============== -->
+<h6>1. Passing data Using Event Binding</h6>
+<div class="contact">
+    <div class="label">
+        <label>Name</label>
+        <input type="text" (input)="saveName($event)">
+        <p> {{name}} </p>
+    </div>
+    <div class="label">
+        <label>Phone</label>
+        <input type="text" (input)="savePhone($event)">
+        <p> {{phone}} </p>
+    </div>
+    <div class="label">
+        <label>Email</label>
+        <input type="email" (input)="saveEmail($event)" >
+        <p> {{email}} </p>
+    </div> 
+
+    
+</div>
+
+<button class="btn"
+    disabled 
+>Submit</button>
+<div *ngIf="isBtnActive">
+    <p>Details saved successfully. Details are</p>
+    <p> {{ name }} </p>
+    <p> {{ phone }} </p>
+    <p> {{ email }} </p>
+</div>
+
+<!-- ============    2 Way Binding       ============== -->
+<h6>2. Using 2 way Binding</h6>
+<div class="contact">
+    <div class="label">
+        <label>Name</label>
+        <input type="text" [(ngModel)]="name">
+        <p> {{name}} </p>
+    </div>
+    <div class="label">
+        <label>Phone</label>
+        <input type="text" [(ngModel)]="phone">
+        <p> {{phone}} </p>
+    </div>
+    <div class="label">
+        <label>Email</label>
+        <input type="email" [(ngModel)]="email">
+        <p> {{email}} </p>
+    </div> 
+
+    
+</div>
+
+
+
+
+
+<!-- 
+
+    1st run a sample project and check if it is running or not
+    Then execute the main app
+
+    
+
+
+ -->

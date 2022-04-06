@@ -1,0 +1,30 @@
+.contact {
+    padding: 1em;
+    display: flex;
+}
+
+.label {
+    margin-left: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn { 
+    padding: 1em 2em;
+    /* background-color: green; */
+    /* color: #fff; */
+    
+    outline: none;
+    border: none;
+    /* cursor: pointer; */
+}
+
+
+
+
+
+
+
+
+
+
